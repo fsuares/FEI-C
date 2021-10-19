@@ -6,8 +6,6 @@ struct Ponto{
 };
 
 Apresente um menu de opções com a saída selecionada.       */
-/*oi fernando*/
- 
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
