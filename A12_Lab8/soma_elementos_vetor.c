@@ -2,14 +2,16 @@
 memória para esse vetor. Em seguida, leia os elementos desse vetor, imprima o vetor lido
  e mostre o resultado da soma dos números ímpares presentes no vetor*/
 
+
+
+//declarando a função para ler o vetor
 #include <stdio.h>
 #include <stdlib.h>
 
-//declarando a função para ler o vetor
+    //declarando a função para ler o vetor
 void soma_impares(int tamanho, int *pont_vetor);
 
-int main()
-{
+int main(){
     int n;
     int *vetor;
 
@@ -21,8 +23,7 @@ int main()
     vetor = malloc(n * sizeof(int));
 
     //adicionando valores ao vetor
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         printf("Informe o %d° valor do vetor: ", i + 1);
         scanf("%d", vetor + i);
     }
@@ -31,25 +32,21 @@ int main()
     soma_impares(n, vetor);
 }
 
-void soma_impares(int tamanho, int *pont_vetor)
-{
-
+void soma_impares(int tamanho, int *pont_vetor){
     int soma_imp; //variavel com a soma dos impares
 
     printf("Os valores informados para o vetor são: \n---> ");
 
     //printando
-    for (int i = 0; i < tamanho; i++)
-    {
+    for (int i = 0; i < tamanho; i++){
         printf("%d ", *(pont_vetor + i));
 
-        if (*(pont_vetor + i) % 2 != 0)
-        { //verificando se o valor é impar
+        if (*(pont_vetor + i) % 2 != 0){ //verificando se o valor é impar
             soma_imp = soma_imp + *(pont_vetor + i);
         }
     }
 
     //PRINT DA SOMA DOS IMPARES
     printf("\n");
-    printf("A soma dos impares do vetor é igual a: %d", soma_imp);
-} 
+    printf("A soma dos impares do vetor é igual a: %d\n", soma_imp);
+}

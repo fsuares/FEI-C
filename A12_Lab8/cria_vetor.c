@@ -35,6 +35,7 @@ void lendo_vetor(int tamanho, int *pont_vetor){
     
     //printando
     for(int i=0; i<tamanho; i++){
-        printf("%d ", *(pont_vetor+i));
+        printf("%d", *(pont_vetor+i));
     }
+    printf("\n");
 }

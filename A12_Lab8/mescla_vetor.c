@@ -82,6 +82,6 @@ int main(){
     //pegando o tamanho do x3
     printf("\n");
     qtd = &cont;//obtendo o valores de cont por meio de um ponteiro
-    printf("O x3 possui %d elementos.", *qtd);
+    printf("O x3 possui %d elementos.\n", *qtd);
 }
 
