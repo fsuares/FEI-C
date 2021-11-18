@@ -6,11 +6,13 @@ Obs.: Não utilize nenhuma biblioteca adicional.
 Exemplo:
 
 Entrada:                             Saída:
-!@wesDFa+-3                     !@WESdfA+-3 *
+!@wesDFa+-3                     !@WESdfA+-3 */
+
 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 
 int main(void) {
   char s[50];
@@ -32,3 +34,4 @@ int main(void) {
   }
   return 0;
 }
+
